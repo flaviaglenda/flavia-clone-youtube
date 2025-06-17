@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 4px 16px;
   background-color: #212121;
   border-bottom: 1px solid #303030;
   position: fixed;
@@ -30,7 +30,9 @@ body {
   align-items: center;
   gap: 16px;
 }
-
+.pesquisar {
+margin-left: 50px;
+}
 .navbar .logo {
   height: 50px;
 }
@@ -66,6 +68,45 @@ body {
   justify-content: center;
   border-radius: 50%;
   font-weight: bold;
+}
+.center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.texto-pesquisa {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+  font-size: 14px;
+}
+
+.pesquisar {
+  padding: 8px 8px 8px 90px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  width: 200px;
+}
+
+.search-btn, .mic-btn {
+  border: none;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search-btn i, .mic-btn i {
+  font-size: 16px;
 }
 
 .sidebar {
